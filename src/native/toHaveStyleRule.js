@@ -1,3 +1,6 @@
+/*
+ * imports functions matcherTest() and buildReturnMessage from ../utils.js. 
+ */
 const { matcherTest, buildReturnMessage } = require('../utils')
 
 function toHaveStyleRule(component, property, expected) {
