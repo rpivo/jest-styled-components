@@ -1,3 +1,10 @@
+/*
+ * css is from reworkcss/css: https://github.com/reworkcss/css#readme . it's a 'CSS parser / 
+ * stringifier for Node.js'. this package is only used in one place - 
+ * const getCSS = () => css.parse(getStyle());
+ * 
+ * the css package can do css.parse(), which can take a string of CSS.
+ */
 const css = require('css');
 const { ServerStyleSheet, __PRIVATE__ } = require('styled-components');
 
