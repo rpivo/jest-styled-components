@@ -35,6 +35,10 @@ const extract = regex => {
 };
 
 const getStyle = () => extract(/^(?!data-styled\.g\d+.*?\n)(.*)?\n/gm);
+/*
+ * reworkcss/css is used here -- css' docs say css.parse() accepts a CSS string and returns an AST 
+ * object. AST is Abstract Syntax Trees. So, css.parse() returns an Abstract Syntax Tree object. 
+ */
 const getCSS = () => css.parse(getStyle());
 
 const getHashes = () => {
