@@ -1,9 +1,7 @@
 /*
  * css is from reworkcss/css: https://github.com/reworkcss/css#readme . it's a 'CSS parser / 
  * stringifier for Node.js'. this package is only used in one place - 
- * const getCSS = () => css.parse(getStyle());
- * 
- * the css package can do css.parse(), which can take a string of CSS.
+ * const getCSS = () => css.parse(getStyle()); .
  */
 const css = require('css');
 const { ServerStyleSheet, __PRIVATE__ } = require('styled-components');
@@ -36,8 +34,8 @@ const extract = regex => {
 
 const getStyle = () => extract(/^(?!data-styled\.g\d+.*?\n)(.*)?\n/gm);
 /*
- * reworkcss/css is used here -- css' docs say css.parse() accepts a CSS string and returns an AST 
- * object. AST is Abstract Syntax Trees. So, css.parse() returns an Abstract Syntax Tree object. 
+ * reworkcss/css is used here -- css.parse() accepts a CSS string and returns an AST object. AST is
+ * Abstract Syntax Trees. So, css.parse() returns an Abstract Syntax Tree object. 
  */
 const getCSS = () => css.parse(getStyle());
 
