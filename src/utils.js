@@ -43,6 +43,9 @@ const getStyle = () => extract(/^(?!data-styled\.g\d+.*?\n)(.*)?\n/gm);
  * 
  * we pass in the result of getStyle() as the data to be turned into an Abstract Syntax Tree by
  * reworkcss/css's parse().
+ * 
+ * reworkscss/css has another method called stringify() that takes in an AST object. That method
+ * isn't used in this file, but is used elsewhere in this package.
  */
 const getCSS = () => css.parse(getStyle());
 
