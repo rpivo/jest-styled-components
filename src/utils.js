@@ -36,6 +36,10 @@ const getStyle = () => extract(/^(?!data-styled\.g\d+.*?\n)(.*)?\n/gm);
 /*
  * reworkcss/css is used here -- css.parse() accepts a CSS string and returns an AST object. AST is
  * Abstract Syntax Trees. So, css.parse() returns an Abstract Syntax Tree object. 
+ * 
+ * an abstract syntx three is a hierarchical program representation that presents source code
+ * structure according to teh grammar of a programming language. Each AST node corresponds to an
+ * item of the source code. See https://astexplorer.net/
  */
 const getCSS = () => css.parse(getStyle());
 
