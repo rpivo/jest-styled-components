@@ -40,6 +40,9 @@ const getStyle = () => extract(/^(?!data-styled\.g\d+.*?\n)(.*)?\n/gm);
  * an abstract syntx three is a hierarchical program representation that presents source code
  * structure according to teh grammar of a programming language. Each AST node corresponds to an
  * item of the source code. See https://astexplorer.net/
+ * 
+ * we pass in the result of getStyle() as the data to be turned into an Abstract Syntax Tree by
+ * reworkcss/css's parse().
  */
 const getCSS = () => css.parse(getStyle());
 
