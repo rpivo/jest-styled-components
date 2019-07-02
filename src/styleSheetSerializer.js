@@ -8,6 +8,9 @@ const css = require('css');
  */
 const { getCSS, getHashes } = require('./utils');
 
+/*
+ * not exactly sure what this string is used for, but it must be a key to be used somewhere else.
+ */
 const KEY = '__jest-styled-components__';
 
 const getNodes = (node, nodes = []) => {
