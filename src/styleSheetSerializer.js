@@ -2,6 +2,10 @@
  * along with ./utils.js, this file imports reworkcss/css. See ./utils.js for more details.
  */
 const css = require('css');
+
+/*
+ * imports a few methods from ./utils.js
+ */
 const { getCSS, getHashes } = require('./utils');
 
 const KEY = '__jest-styled-components__';
