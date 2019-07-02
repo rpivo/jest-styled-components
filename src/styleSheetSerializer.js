@@ -1,3 +1,6 @@
+/*
+ * along with ./utils.js, this file imports reworkcss/css. See ./utils.js for more details.
+ */
 const css = require('css');
 const { getCSS, getHashes } = require('./utils');
 
