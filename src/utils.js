@@ -4,6 +4,12 @@
  * const getCSS = () => css.parse(getStyle()); .
  */
 const css = require('css');
+/*
+ * imports ServerStyleSheet and __PRIVATE__ from styled-components.
+ * 
+ * with projects that employ server side rendering (SSR), styled-components provides a way to
+ * rehydrate everything with a stylesheet using ServerStyleSheet.
+ */
 const { ServerStyleSheet, __PRIVATE__ } = require('styled-components');
 
 if (!__PRIVATE__) {
