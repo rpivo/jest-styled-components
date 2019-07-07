@@ -12,6 +12,9 @@ const css = require('css');
  */
 const { ServerStyleSheet, __PRIVATE__ } = require('styled-components');
 
+/*
+ * if the __PRIVATE__ import was not destructured from styled-components, throw an error. 
+ */
 if (!__PRIVATE__) {
   throw new Error('Could neither find styled-components secret internals');
 }
