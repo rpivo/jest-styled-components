@@ -16,7 +16,7 @@
  * @babel/plugin-transform-react-jsx-self
  * @babel/plugin-transform-react-jsx-source
  * 
- * @babel/plugin-syntax-jsx is a syntax plugin so that babel recognizes jsx.
+ * @babel/plugin-syntax-jsx is a syntax plugin that lets babel parse jsx.
  *
  * @babel/plugin-transform-react-jsx is a transform plugin that takes in jsx and returns vanilla 
  * JavaScript.
@@ -24,6 +24,12 @@
  * @babel/plugin-transform-react-display-name is a transform plugin that provides React objects
  * with their displayName properties that are implicitly set in React. This improves debugging and
  * provides the name of erroring components rather than just displaying "Component".
+ *
+ * there are two additional plugins included here: @babel/plugin-proposal-object-rest-spread and 
+ * @babel/plugin-proposal-class-properties .
+ * 
+ * @babel/plugin-proposal-object-rest-spread adds support for the rest and spread operators, which 
+ * are similar but different.
  */
 {
   "presets": [
