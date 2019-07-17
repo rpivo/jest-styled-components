@@ -30,6 +30,19 @@
  * 
  * @babel/plugin-proposal-object-rest-spread adds support for the rest and spread operators, which 
  * are similar but different.
+ * 
+ * the rest operator denotes the remaining arguments in an array. Example:
+ *
+ * var myName = ["Marina", "Magdy", "Shafiq"];
+ * const [firstName, ...familyName] = myName;
+ * console.log(firstName); // Marina
+ * console.log(familyName); // ["Magdy", "Shafiq"]
+ *
+ * by contrast, the spread operator takes an array and packs its values somewhere else. Example:
+ *
+ * var myName = ["Marina", "Magdy", "Shafiq"];
+ * var newArr = [...myName, "FrontEnd", 24];
+ * console.log(newArr); // ["Marina", "Magdy", "Shafiq", "FrontEnd", 24]
  */
 {
   "presets": [
